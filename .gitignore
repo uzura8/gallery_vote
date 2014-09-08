@@ -1,0 +1,13 @@
+*~
+*.bak
+Thumbs.db
+desktop.ini
+.DS_Store
+.buildpath
+.project
+.settings
+*.tmproj
+/tags
+nbproject/
+build
+.idea
