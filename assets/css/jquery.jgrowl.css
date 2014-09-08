@@ -35,7 +35,7 @@
 
 /** jGrowl Styling **/
 .jGrowl {
-	z-index: 			9999;
+	z-index: 			9999999;
 	color: 				#fff;
 	font-size: 			12px;
 	position:			fixed;
@@ -105,7 +105,7 @@
 }
 
 .jGrowl .jGrowl-notification .jGrowl-close {
-	z-index:				99;
+	z-index:				999999;
 	float: 					right;
 	font-weight: 			bold;
 	font-size: 				1em;
