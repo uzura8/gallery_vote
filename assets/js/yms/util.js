@@ -84,11 +84,11 @@ function executeVote(selfSelector)
 
   var votedIds = getVotedIds();
   if (!checkEnableToVote(votedIds)) {
-    showMessage(getConf('voteLimit') + '件以上は投票できません。');
+    showMessage(getConf('voteLimit') + '件以上は投票できません。', 'error');
     return false;
   }
   if ($.inArray(entryId, votedIds) !== -1) {
-    showMessage('既に投票済みです。');
+    showMessage('既に投票済みです。', 'error');
     return false;
   }
 
@@ -132,7 +132,12 @@ function closeApprise()
 
 function showMessage(msg)
 {
-  $.jGrowl(msg);
+  var viewType = (arguments.length > 1) ? arguments[1] : 'success';
+  notif({
+    msg: msg,
+    type: viewType,
+    position: 'center'
+  });
 }
 
 function getConf(key) {

@@ -10,11 +10,11 @@
     <title>Off Canvas Template for Bootstrap</title>
 
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./assets/css/offcanvas.css" rel="stylesheet">
     <link href="./assets/css/apprise.min.css" rel="stylesheet">
-    <link href="./assets/css/jquery.jgrowl.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/blueimp-gallery.min.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap-image-gallery.min.css">
+    <link href="./assets/css/notifIt.css" rel="stylesheet">
+    <link href="./assets/css/blueimp-gallery.min.css" rel="stylesheet">
+    <link href="./assets/css/bootstrap-image-gallery.min.css" rel="stylesheet">
+    <link href="./assets/css/vote.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="./assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -28,27 +28,6 @@
   </head>
 
   <body>
-    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!-- /.nav-collapse -->
-      </div><!-- /.container -->
-    </div><!-- /.navbar -->
-
     <div class="container">
       <div id="header_alert" class="alert alert-info" role="alert">
         <span class="vote_limit"></span> 件中 <span class="voted_count"></span> 件投票済み
@@ -163,7 +142,7 @@
     if (typeof jQuery == 'undefined') document.write('<script src=".\/assets\/js\/jquery-2.1.1.min.js"><\/script>');
     </script>
     <script src="./assets/js/apprise-1.5.min.js"></script>
-    <script src="./assets/js/jquery.jgrowl.min.js"></script>
+    <script src="./assets/js/notifIt.js"></script>
     <script src="./assets/js/jquery.cookie.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/jquery.blueimp-gallery.min.js"></script>
