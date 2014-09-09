@@ -11,3 +11,5 @@ desktop.ini
 nbproject/
 build
 .idea
+
+/assets/js/yms/init.js

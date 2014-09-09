@@ -1,0 +1,5 @@
+var GL = {};
+GL.execute_flg = false;
+
+GL.apiBaseUrl = 'http://example.com/';
+GL.voteLimit = 5;
