@@ -1,5 +1,6 @@
 $(function () {
-  $('.vote_limit').html(getConf('voteLimit'));
+  initPageView();
+
   $('#blueimp-gallery')
     .on('open', function (event) {
         // Gallery open event handler
@@ -12,7 +13,7 @@ $(function () {
       closeApprise();
       var id = index + 1;
       var voteBtn = $(this).find('.btn_vote');
-      changeBtnStatus(voteBtn, checkVoted(id) ? 'voted' : 'default');
+      changeBtnStatus(voteBtn, checkVoted(id) ? 'voted' : 'default', checkEnableToVote() === false);
       $('#gallery_onslide').val(id);
     })
     .on('slideend', function (event, index, slide) {
