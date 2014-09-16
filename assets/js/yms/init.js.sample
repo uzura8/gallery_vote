@@ -1,5 +1,13 @@
 var GL = {};
 GL.execute_flg = false;
 
-GL.apiBaseUrl = 'http://example.com/';
-GL.voteLimit = 5;
+GL.configs = {
+  basePath: '/',
+  apiUrl: 'http://example.com/vote/api/vote.jsonp',
+  voteLimit: 3,
+  cookie: {
+    name: 'yms_vote_ids',
+    path: '/',
+    expires: 31,// days
+  }
+};
